@@ -1,0 +1,277 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .typing-text {
+      font-size: 1.25rem;
+      color: #4A5568;
+      font-family: Arial, sans-serif;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.15em solid #4A5568;
+      width: 17ch;
+      animation: typing 2s steps(15), blink-caret 0.5s step-end infinite;
+    }
+
+    /* Typing animation */
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 15ch; }
+    }
+
+    /* Blinking caret */
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #4A5568; }
+    }
+  </style>
+</head>
+<body class="bg-white font-sans leading-normal tracking-normal">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-blue-600 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="text-white font-bold text-lg">
+        <a href="#">Saridha</a>
+      </div>
+      <div class="space-x-6">
+        <a href="#about" class="text-white hover:text-blue-200">About</a>
+        <a href="#projects" class="text-white hover:text-blue-200">Projects</a>
+        <a href="#contact" class="text-white hover:text-blue-200">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-start px-10">
+    <!-- Left Side Content -->
+    <div class="text-left max-w-lg">
+      <h1 class="text-5xl font-bold text-black">
+        Welcome to My Portfolio
+      </h1>
+      <p id="animatedText" class="typing-text mt-4"></p> 
+      <div class="mt-8 flex space-x-6"> <!-- Flexbox to align the icons in a straight line -->
+        <a href="tel:8072927943">
+          <img src="download.png" alt="Phone image" class="w-16 h-16">
+        </a>
+        
+        <a href="mailto:saridhav17@gmail.com">
+          <img src="mail id.png" alt="Mail Id" class="w-16 h-16">
+        </a>
+        <a href="https://www.linkedin.com/in/saridha17">
+        <img src="linked in.png" alt="LinkedIn" class="w-16 h-16">
+        </a>
+        <a href="https://github.com/Saridhav">
+        <img src="github.png" alt="GitHub" class="w-16 h-16">
+      </a>
+      
+        <img src="location.png" alt="Location" class="w-16 h-16">
+      
+      </div>
+    </div>
+    <!-- Left Side Image (Moved slightly to the right) -->
+    <div class="flex justify-center items-center ml-40">
+      <img src="image.jpg" alt="Profile Picture" class="w-80 h-80 rounded-full object-cover border-4 border-blue-600">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white text-center">
+    <h2 class="text-4xl font-bold mb-6">About Me</h2>
+    <p class ="text-lg mx-auto max-w-2xl">Here's an enhanced version of your "About Me" section for your portfolio:
+
+      I'm Saridha, a passionate Python developer focused on creating innovative solutions and tackling complex problems. I enjoy learning new technologies and building user-friendly, impactful applications. With a strong foundation in full stack development, I thrive on crafting efficient and elegant code that brings ideas to life and makes a meaningful difference.</p>
+  </section>
+  <section id="education" class="py-16 bg-gray-100 text-center">
+    <h2 class="text-4xl font-bold mb-12 text-gray-800">Educational Details</h2>
+    <div class="container mx-auto px-4">
+        <!-- Education Item 1 -->
+        <div class="bg-white p-8 mb-8 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Bachelor of Computer Science and Engineering</h3>
+            <p class="text-gray-600 italic">Vivekanandha College of Engineering for Women</p>
+            <p class="text-gray-500 mt-2">Year: 2021 - 2025</p>
+            <p class="text-gray-800 font-semibold mt-4">CGPA: 8.5 (Upto 6th sem)</p>
+        </div>
+
+        <!-- Education Item 2 -->
+        <div class="bg-white p-8 mb-8 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Higher Secondary (HSLC)</h3>
+            <p class="text-gray-600 italic">Sri Sarada Vidhyalaya Hr.Sec School for Girls</p>
+            <p class="text-gray-500 mt-2">Year: 2020 - 2021</p>
+            <p class="text-gray-800 font-semibold mt-4">Percentage: 81%</p>
+        </div>
+
+        <!-- Education Item 3 -->
+        <div class="bg-white p-8 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Secondary School (SSLC)</h3>
+            <p class="text-gray-600 italic">Sri Sarada Vidhyalaya Hr.Sec School for Girls</p>
+            <p class="text-gray-500 mt-2">Year: 2017 - 2018</p>
+            <p class="text-gray-800 font-semibold mt-4">Percentage: 85%</p>
+        </div>
+    </div>
+</section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-50 text-center">
+    <h2 class="text-4xl font-bold mb-6">My Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 shadow-lg rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">EduPay Hub</h3>
+        <h5>An ongoing web app for our college using HTML, CSS, Node.js, and MongoDB to streamline fee management. It allows students to register, pay fees, and download receipts, while admins manage profiles and fee structures via API integration.</h5>
+        <img src="project1.jpg" alt="EduPay Hub">
+        <a href="http://localhost:3030/login.html" class="inline-block px-6 py-2 mt-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none">
+          GitHub Link
+      </a>
+        
+        <p class="text-lg"></p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Sentiment Analysis</h3>
+        <h5>Built with HTML, CSS, and Python, the Sentiment Analysis Tool helps businesses analyze product comments, identify trends, and improve satisfaction.</h5>
+        <img src="analysis.jpg" alt="Sentiment Analysis">
+        <img src="project2.jpg" alt="Sentiment Analysis">
+        <!-- GitHub Button Link -->
+        <a href="https://github.com/SaridhaV/Product-comment-Sentiment-analysis-tool" class="inline-block px-6 py-2 mt-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none">
+            GitHub Link
+        </a>
+    </div>
+    
+    <div class="bg-white p-6 shadow-lg rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Caller Id Lookup</h3>
+        <h5>A Caller ID lookup project retrieves and displays information about incoming phone numbers. It uses APIs or a database to match phone numbers with names, locations, or other details.</h5>
+        
+            <img src="phone.jpg" alt="Caller Id Lookup" class="w-70 h-58">
+            <img src="call.jpg" alt="Caller Id Lookup" class="w-70 h-60">
+            <!-- GitHub Button Link -->
+            <a href="https://github.com/SaridhaV/Caller_id_lookup" class="inline-block px-6 py-2 mt-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none">
+                GitHub Link
+            </a>
+        </div>
+    </div>
+    
+       
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="py-16 bg-white text-center">
+    <h2 class="text-4xl font-bold mb-6">Skills</h2>
+    <div class="max-w-md mx-auto">
+      <div class="text-left mb-4">
+        <p>Python <span class="float-right">90%</span></p>
+        <div class="w-full bg-gray-300 h-2 rounded-full">
+          <div class="bg-red-600 h-2 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="text-left mb-4">
+        <p>Web Development <span class="float-right">80%</span></p>
+        <div class="w-full bg-gray-300 h-2 rounded-full">
+          <div class="bg-red-600 h-2 rounded-full" style="width: 95%;"></div>
+        </div>
+      </div>
+      <div class="text-left mb-4">
+        <p>Javascript <span class="float-right">70%</span></p>
+        <div class="w-full bg-gray-300 h-2 rounded-full">
+          <div class="bg-red-600 h-2 rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="text-left mb-4">
+        <p>HTML & CSS <span class="float-right">85%</span></p>
+        <div class="w-full bg-gray-300 h-2 rounded-full">
+          <div class="bg-red-600 h-2 rounded-full" style="width: 95%;"></div>
+        </div>
+      </div>
+      <div class="text-left mb-4">
+        <p>C <span class="float-right">85%</span></p>
+        <div class="w-full bg-gray-300 h-2 rounded-full">
+          <div class="bg-red-600 h-2 rounded-full" style="width: 70%;"></div>
+        </div>
+      </div>
+      
+      <div class="text-left mb-4">
+        <p>Project Management Tools <span class="float-right">90%</span></p>
+        <div class="w-full bg-gray-300 h-2 rounded-full">
+          <div class="bg-red-600 h-2 rounded-full" style="width: 95%;"></div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="contact" class="section mt-8 text-center flex justify-center items-center">
+    <div class="space-y-8 max-w-lg w-full">
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-600 mb-6">Feel free to reach out if you have any questions or opportunities to discuss!</p>
+        
+        <form action="https://example.com/submit" method="POST" class="space-y-4 w-full">
+            <!-- First Name Field -->
+            <div class="flex justify-between">
+                <div class="w-1/2 pr-2">
+                    <label for="firstName" class="block text-gray-700 font-semibold">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your First Name">
+                </div>
+            
+                <!-- Last Name Field -->
+                <div class="w-1/2 pl-2">
+                    <label for="lastName" class="block text-gray-700 font-semibold">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Last Name">
+                </div>
+            </div>
+
+            <!-- Email Field -->
+            <div>
+                <label for="email" class="block text-gray-700 font-semibold">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Email Address">
+            </div>
+
+            <!-- Message Field -->
+            <div>
+                <label for="message" class="block text-gray-700 font-semibold">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Message"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+  
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 text-center">
+    <p>&copy; 2024 Saridha. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Font Awesome CDN for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+    const texts = ["Python Developer", "Front End Developer", "Web Development","Python Frameworks"];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+      if (count === texts.length) {
+        count = 0;
+      }
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      document.getElementById("animatedText").textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1000);  // Pause before typing next text
+      } else {
+        setTimeout(type, 100);  // Speed of typing
+      }
+    })();
+  </script>
+
+</body>
+</html>
